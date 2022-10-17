@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<!-- Grouping testcase for selecting and executing using include-->
+	  <test name="Group1">
+			 <groups>
+				<run >
+				<include name="Group1SelectedTest"></include>
+				</run>
+			</groups>
+	  		<classes>
+		  	<class name="testNGProgram.TestNG1stProgram">
+			  	</class>
+			  	<class name="testNGProgram.HomeLoan">
+			  	</class>
+				 <class name="testNGProgram.CarLoan">
+			   </class>
+	  		 </classes>
+	   </test> <!-- Test --> 
+	   
+	   <!-- Grouping testcase for selecting and executing using exclude-->
+	    <test name="Group2">
+			 <groups>
+				<run >
+				<exclude name="Group1SelectedTest"></exclude>
+				</run>
+			</groups>
+	  		<classes>
+		  	<class name="testNGProgram.TestNG1stProgram">
+			  	</class>
+			  	<class name="testNGProgram.HomeLoan">
+			  	</class>
+				 <class name="testNGProgram.CarLoan">
+			   </class>
+	  		 </classes>
+	   </test> <!-- Test --> 
+	   
+	 		<!-- Selecting testcase for dependOnMethod-->
+	   	    <test name="Group3">
+	  		<classes>
+				 <class name="testNGProgram.CarLoan">
+			   </class>
+	  		 </classes>
+	   </test> <!-- Test --> 
+</suite> <!-- Suite -->
+
+

@@ -12,6 +12,7 @@ public class CarLoan {
 			System.out.println("Checking GIT push");
 			System.out.println("Checking GIT updated after pull and again pushing the code to repository");
 			System.out.println("downloading GIT updated");
+			System.out.println("Added After creating a branch");
 		}
 
 		@Test

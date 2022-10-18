@@ -10,6 +10,7 @@ public class CarLoan {
 			System.out.print("Grouping : ");
 			System.out.println("Web Car Loan Login");
 			System.out.println("Checking GIT push");
+			System.out.println("Checking GIT updated after pull and again pushing the code to repository");
 		}
 
 		@Test

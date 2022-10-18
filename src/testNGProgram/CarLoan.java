@@ -9,6 +9,7 @@ public class CarLoan {
 		{
 			System.out.print("Grouping : ");
 			System.out.println("Web Car Loan Login");
+			System.out.println("Checking GIT push");
 		}
 
 		@Test
